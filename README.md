@@ -73,7 +73,9 @@ This site will be available at http://install.drupal.192.168.56.132.xip.io.
 
 # Tools
 ### Adminer
-Adminer for mysql administration (credentials drupal:drupal and root:root)
+**Adminer** for MySQL administration is not included to the project by default.
+But you can download it from [Adminer site](https://www.adminer.org/#download) and put it to the project folder (near the folder **docroot**) on the host machine.
+Credentials are: **drupal:drupal** or **root:root**.
 ```
 http://192.168.56.132.xip.io/adminer.php
 ```
