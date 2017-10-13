@@ -11,8 +11,8 @@
 - name: Sync files into docroot
   shell: "cp -R {{ source }}/ {{ destination }}"
 
-- name: Sync OpenY profile
-  shell: "mv {{ profile_source }}/ {{ destination }}/{{ profile_destination }}"
+#- name: Sync OpenY profile
+#  shell: "mv {{ profile_source }}/ {{ destination }}/{{ profile_destination }}"
 
 - name: Folder permissions
   shell: "sudo chown -R www-data:jenkins {{ destination }}"
