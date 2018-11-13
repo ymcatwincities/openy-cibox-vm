@@ -37,8 +37,8 @@
     shell: 'rm -rf /var/www/build*'
     sudo: yes
     
-  - name: Remove builds from Jenkins workspace
-    shell: 'rm -rf /var/lib/jenkins/jobs/PR_BUILDER_COMPOSER/workspace/build*'
+  - name: Remove workspaces from Jenkins workspace
+    shell: 'rm -rf /var/lib/jenkins/jobs/PR_BUILDER_COMPOSER/workspac*'
     sudo: yes
 
   - name: Remove files from temporary folder
