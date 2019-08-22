@@ -14,7 +14,7 @@ vagrantfile-local:
         provider:
             virtualbox:
                 box: 'u14.04php7.1.box'
-                box_url: 'http://cici.ffwua.com/u14.04php7.1.box'
+                box_url: 'http://cici.ffwua.com/u18.04php7.2.box'
                 modifyvm:
                     natdnshostresolver1: on
                     memory: '3072'
