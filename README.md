@@ -71,6 +71,11 @@ sh reinstall_install.sh
 
 This site will be available at http://install.drupal.192.168.56.132.xip.io.
 
+### Visual Studio Code
+
+To use xdebug for Visual Studio Code install https://gist.github.com/podarok/732ba655939ba9be3304e57b9bb5b2c3 into .vscode/launch.json
+Once enabled listening in VSCode it'll catch enabled options or breakpoints.
+
 # Tools
 ### Adminer
 **Adminer** for MySQL administration is not included to the project by default.
