@@ -13,8 +13,8 @@ vagrantfile-local:
                     guest: '3306'
         provider:
             virtualbox:
-                box: 'u18.04php7.3.box'
-                box_url: 'http://cici.cibox.tools/u18.04php7.3.box'
+                box: 'u18.04php7.4.box'
+                box_url: 'http://cici.cibox.tools/u18.04php7.4.box'
                 modifyvm:
                     natdnshostresolver1: on
                     memory: '3072'
