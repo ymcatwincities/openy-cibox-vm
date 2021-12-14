@@ -47,6 +47,9 @@
 
   - name: Remove configs from temporary folder
     shell: "rm -rf {{ tmp_folder }}/confi*"
+  
+  - name: Remove configs from temporary folder
+    shell: "echo ./composer_* | xargs rm -rf"
 
   - name: Remove Jenkins logs
     shell: "rm -rf /var/log/jenkins/*"
