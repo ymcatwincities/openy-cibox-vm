@@ -31,15 +31,15 @@
   tasks:
   - name: Clean database
     shell: 'mysql -u{{ mysql_user }} -p{{ mysql_pass }} -e "show databases;" -s | egrep "{{ database_pattern }}" | xargs -I "@@" mysql -u{{ mysql_user }} -p{{ mysql_pass }} -e "DROP DATABASE @@"'
-    sudo: yes
+    become: yes
 
   - name: Remove builds
     shell: 'rm -rf /var/www/build*'
-    sudo: yes
+    become: yes
     
   - name: Remove workspaces from Jenkins workspace
     shell: 'rm -rf /var/lib/jenkins/jobs/PR_BUILDER_COMPOSER/workspac*'
-    sudo: yes
+    become: yes
 
   - name: Remove files from temporary folder
     shell: "find {{ tmp_folder }} -maxdepth 1 -name '{{ item }}' -delete"
